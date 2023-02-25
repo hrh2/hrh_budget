@@ -5,6 +5,8 @@ import Remaining from './components/Remaining';
 import Spent  from './components/Spent';
 import AddExpense from './components/AddExpense'; 
 import { AppProvider } from './context/Appcontext'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap'
 function App() {
   return(
     <AppProvider>

@@ -32,7 +32,7 @@ const initialState ={
 
 export const AppContext=createContext();
 
-//a function which hold a stte and passes it to our components (and by using reducer hook)
+//a function which hold a state and passes it to our components (and by using reducer hook)
 
 export const AppProvider=(props)=>{
      const [state,dispatch]=useReducer(AppReducer,initialState);   
@@ -44,4 +44,4 @@ export const AppProvider=(props)=>{
           {props.children}
 </AppContext.Provider>);
      
-};//the reducer is in charge of creating the new state based on actions recieved from the parent component
+};//the reducer is in charge of creating the new state based on actions received from the parent component
